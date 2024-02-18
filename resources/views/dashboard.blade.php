@@ -1,15 +1,18 @@
 @extends('layout.layout')
 @section('content')
     <div class="row">
-        <div class="col-3">
+        <div class="col-12 col-lg-3">
             {{-- Left side bar --}}
             @include('shared.left-sidebar')
+            {{-- Search bar --}}
+            @include('shared.search-bar')
         </div>
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
             {{-- Including the Alert --}}
             @include('shared.success-message')
             {{-- Including the idea(coment) --}}
             @include('ideas.shared.submit-idea')
+
             <hr>
                 {{-- For Each Ideas (cards) --}}
                 @forelse ($ideas as $idea)
@@ -30,8 +33,7 @@
             </div>
 
         </div>
-        <div class="col-3">
-            @include('shared.search-bar')
+        <div class="col-12 col-lg-3">
             @include('shared.follow-box')
         </div>
     </div>

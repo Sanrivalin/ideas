@@ -1,0 +1,18 @@
+
+
+.card {
+    display:none;
+}
+
+.left-bar {
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    .btn-search {
+        padding: 0%;
+    }
+
+
+}

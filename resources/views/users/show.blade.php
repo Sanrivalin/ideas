@@ -1,7 +1,7 @@
 @extends('layout.layout')
 @section('content')
     <div class="row">
-        <div class="col-3">
+        <div class="col-12 col-lg-3">
             {{-- Left side bar --}}
             @include('shared.left-sidebar')
         </div>
@@ -26,7 +26,7 @@
         {{ $ideas->withQueryString()->links() }}
     </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-lg-3">
             @include('shared.search-bar')
             @include('shared.follow-box')
         </div>

@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card mb-5">
     <div class="card-header pb-0 border-0">
         <h5 class="">Search</h5>
     </div>
